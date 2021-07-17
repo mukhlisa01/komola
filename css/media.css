@@ -1,0 +1,108 @@
+@media (max-width:1200px) {
+    .container{
+        max-width: 991px;
+    }
+    
+    .header .navbar {
+        padding: 20px 0;
+    }
+    
+    .main{
+        padding: 220px 0;
+    }
+    
+    .p-top {
+        padding-top: 75px;
+    }
+    
+    .services .item {
+        margin-top: 90px;
+    }
+    
+    .pricing .cards .tariff,
+    .pricing .cards .price{
+        padding: 20px 0;
+    }
+    
+    .pricing .cards .list {
+        margin: 40px 0 40px;
+    }
+    
+    .pricing .cards .btn{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1020px) {
+    .container{
+        max-width: 767px;
+    }
+    
+    .main{
+        padding: 130px 0;
+    }
+    
+    .main-title {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    
+    .footer {
+        background: #1f2c33;
+        padding: 45px 0;
+    }
+    
+    .footer-bottom{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width:800px) {
+    .container{
+        max-width: 576px;
+    }
+    
+    .header .navbar {
+        padding: 10px 0;
+    }
+    
+    .main-title {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    
+    .main-subtitle {
+        max-width: 320px;
+        margin: 20px auto;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    
+    .main-link {
+        padding: 10px 30px
+    }
+    
+    .main {
+        padding: 110px 0;
+    }
+    
+    .pricing .cards{
+        margin-bottom: 10px;
+    }
+    
+    .contact {
+        padding-bottom: 40px;
+    }
+    
+    .footer-info{
+        margin-bottom: 7px;
+    }
+    
+    .footer-info .f-title{
+        padding-bottom: 10px;
+    }
+    
+    .footer-bottom{
+        padding: 10px 0;
+    }
+}

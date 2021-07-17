@@ -1,0 +1,346 @@
+:root{
+    --orange: #ed4f2e;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Site-title */
+.site-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.p-top{
+    padding-top: 100px;
+}
+
+.site-title .title{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.site-title .subtitle{
+    max-width: 545px;
+    font-size: 14px;
+    color: #1f2c33;
+    line-height: 20px;
+    margin: 22px 0 28px;
+}
+
+.site-title .line{
+    width: 135px;
+    height: 1px;
+    background: #d7d7d7;
+}
+
+.header .navbar{
+    padding: 36px 0;
+}
+
+.header .navbar .navbar-toggler{
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.header .navbar .nav-link{
+    font-size: 14px;
+    color: #1f2c33;
+    padding: 11px 17px;
+    border-radius: 5px;
+}
+
+.header .navbar .nav-link.active:hover,
+.header .navbar .nav-link.active{
+    color: #fff;
+    font-weight: 700;
+    background: var(--orange);
+}
+
+.header .navbar .nav-link:hover{
+    color: var(--orange);
+}
+
+/* Main */
+.main{
+    background: url(../images/header_bg.jpg) no-repeat center /cover;
+    padding: 280px 0 260px;
+    color: #fff;
+}
+
+.main-title{
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.main-subtitle{
+    max-width: 570px;
+    margin: 28px auto 38px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.main-link{
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Services */
+.services .item{
+    margin-top: 118px;
+}
+
+.services .item i{
+    font-size: 55px;
+    /* color: #fff; */
+}
+
+.services .item .title{
+    font-size: 25px;
+    color: #1f2c33;
+    margin: 18px 0 13px;
+}
+
+.services .item .text{
+    font-size: 14px;
+    line-height: 21px;
+    color: #4f4f4f;
+}
+
+.services .item:hover .title{
+    color: var(--orange);
+}
+
+/* PRICING */
+.pricing .cards{
+    border: 1px solid #ebebeb;
+}
+
+.pricing .cards .tariff{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+}
+
+.pricing .cards .price{
+    font-size: 45px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+    background: #ebebeb;
+}
+
+.pricing .cards .price span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing .cards .list {
+    margin: 55px 0 50px;
+}
+
+.pricing .cards .list-item{
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 31px;
+}
+
+.pricing .cards .btn{
+    font-size: 14px;
+    color: #fff;
+    background: var(--orange);
+    border-radius: 5px;
+    padding: 11px 25px;
+    margin-bottom: 55px;
+}
+
+.pricing .cards:hover{
+    border-color: var(--orange);
+    box-shadow: 0 0 30px #b8b8b8;
+}
+
+.pricing .cards:hover .price{
+    background: var(--orange);
+    color: #fff;
+}
+
+/* PROJECTS */
+.projects .block{
+    position: relative;
+    margin-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects .block::after{
+    content: 'View Project';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: #1f2c1f;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.projects .block:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.projects .block-img{
+    transition: 0.5s;
+}
+
+.projects .block:hover .block-img{
+    transform: scale(1.3);
+    filter: grayscale(100%) blur(3px);
+}
+
+/* CONTACT */
+.contact{
+    padding-bottom: 100px;
+}
+
+.contact .container div form .input,
+.contact .container div textarea{
+    width: 100%;
+    padding: 30px 0 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+    resize: none;
+}
+
+.contact .container div form .input::placeholder,
+.contact .container div textarea::placeholder{
+    font-size: 14px;
+    color: #1f2c33;
+}
+
+.btn button{
+    padding: 14px 43px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn button:hover,
+.pricing .cards:hover .btn{
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* FOOTER */
+.footer{
+    background: #1f2c33;
+    padding: 90px 0;
+}
+
+.footer-info .f-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+
+.footer-info .f-text,
+.footer-info .adress i{
+    font-size: 14px;
+    color: #a3b1bf;
+    line-height: 22px;
+}
+
+.footer-info .logo{
+    margin-bottom: 13px;
+}
+
+.footer-info .adress{
+    margin-top: 22px;
+}
+
+.footer-info .adress i{
+    margin-right: 10px;
+}
+
+.footer-info .thumbs img{
+   margin-bottom: 5px;
+}
+
+.footer-info form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.footer-info form input{
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.footer-info form .email{
+    background: #404b51;
+    padding-left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.footer-info form .email::placeholder{
+    font-size: 14px;
+    color: #a3b1bf;
+}
+
+.footer-info form .sbcr{
+    background: var(--orange);
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-info .icons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-info .icons a{
+   padding: 8px 14px;
+   border: 1px solid #fff;
+   color: #fff; 
+   border-radius: 5px;
+}
+
+/* FOOTER-BOTTOM */
+.footer-bottom{
+    padding: 33px 0;
+    background: #283645;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
